@@ -1,4 +1,78 @@
 header{
+    background-color: var(--colorAnaranjado);
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 10px ;
+    padding-right: 10px;    
+    width: 100%;
 
-    background-color: var(--colorAnaranjado)
+}
+
+header .header__logo {
+    margin-right: 20px
+    
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.header__menu__sitio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.header__menu__usuarios {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+header nav ul li a {
+    text-transform: uppercase
+}
+
+/* Tablets */
+
+@media (min-width : 769px) {
+    header{
+        
+        flex-direction: row;
+        align-items: center;
+          
+    }
+
+    header li {
+        margin: 0 10px  ;
+    }
+    .header__menu {
+        
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        
+    }
+
+    .header__menu__sitio {
+        
+        flex-direction: row;
+        
+    }
+    
+    .header__menu__usuarios {
+       
+        flex-direction: row;
+    }
+}
+
+/* Laptops */
+
+@media (min-width : 1024px) {
+
 }
