@@ -3,6 +3,8 @@ main {
     padding-right: 0;
 }
 
+
+
 .index__products {
     margin-left: auto;
     margin-right: auto;
@@ -112,6 +114,8 @@ main {
 
 
 @media (min-width : 768px) {
+
+
 
     .index  main {
         padding: 0 50px;

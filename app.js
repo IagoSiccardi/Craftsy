@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var productRouter = require('./routes/products');
 
 var app = express();
 
@@ -19,10 +20,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-/* app.use('/', indexRouter);
-app.use('/users', usersRouter); */
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
+app.use('/products', productRouter);
 
-app.get('/',(req,res) => res.sendFile(path.join(__dirname,'views','index.html')))
+/* app.get('/',(req,res) => res.sendFile(path.join(__dirname,'views','index.html')))
 
 app.get('/login',(req,res) => res.sendFile(path.join(__dirname,'views','login.html')))
 
@@ -31,7 +33,7 @@ app.get('/product-cart',(req,res) => res.sendFile(path.join(__dirname,'views','p
 app.get('/product-detail',(req,res) => res.sendFile(path.join(__dirname,'views','productDetail.html')))
 
 app.get('/register',(req,res) => res.sendFile(path.join(__dirname,'views','register.html')))
-
+ */
 
 
 // catch 404 and forward to error handler
