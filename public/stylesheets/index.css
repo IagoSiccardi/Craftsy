@@ -3,7 +3,9 @@ main {
     padding-right: 0;
 }
 
-
+.index__banner {
+    display: none;
+}
 
 .index__products {
     margin-left: auto;
@@ -121,6 +123,18 @@ main {
         padding: 0 50px;
     }
 
+    
+    .index__banner {
+        display: block;
+    }
+
+    .index__carousel-item {
+        background-size: 100%;
+        height: 53vh;
+        width: 100%;
+    }
+    
+
     .index__products {
         
         
@@ -143,7 +157,11 @@ main {
 }
 
 
-@media (min-width : 1140px) {
+@media (min-width : 1024px) {
+
+
+   
+
     .index {
         max-width: 1140px;
         margin: 0 auto;
